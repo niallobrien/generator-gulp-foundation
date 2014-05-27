@@ -1,6 +1,6 @@
 # Web app generator [![Build Status](https://secure.travis-ci.org/yeoman/generator-gulp-webapp.svg?branch=master)](http://travis-ci.org/yeoman/generator-gulp-webapp)
 
-[Yeoman](http://yeoman.io) generator that scaffolds out a front-end web app using [Gulp](http://gulpjs.com/) for the build process.
+[Yeoman](http://yeoman.io) generator that scaffolds out a Foundation 5 front-end web app using [Gulp](http://gulpjs.com/) for the build process.
 
 ## Features
 
@@ -16,8 +16,8 @@
 
 ## Getting Started
 
-- Install: `npm install -g generator-gulp-bootstrap`
-- Run: `yo gulp-bootstrap`
+- Install: `npm install -g generator-gulp-foundation`
+- Run: `yo gulp-foundation`
 - Run `gulp` for building and `gulp watch` for preview
 
 

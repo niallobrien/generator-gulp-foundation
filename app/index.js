@@ -47,8 +47,8 @@ AppGenerator.prototype.askFor = function askFor() {
     name: 'features',
     message: 'What more would you like?',
     choices: [{
-      name: 'Bootstrap',
-      value: 'includeBootstrap',
+      name: 'Foundation 5',
+      value: 'includeFoundation',
       checked: true
     }, {
       name: 'Modernizr',
@@ -66,7 +66,7 @@ AppGenerator.prototype.askFor = function askFor() {
 
     // manually deal with the response, get back and store the results.
     // we change a bit this way of doing to automatically do this in the self.prompt() method.
-    this.includeBootstrap = hasFeature('includeBootstrap');
+    this.includeFoundation = hasFeature('includeFoundation');
     this.includeModernizr = hasFeature('includeModernizr');
 
     cb();
@@ -116,21 +116,26 @@ AppGenerator.prototype.writeIndex = function () {
   this.indexFile = this.engine(this.indexFile, this);
 
   // wire Bootstrap plugins
-  if (this.includeBootstrap) {
-    var bs = 'bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/';
+  if (this.includeFoundation) {
+    var f5 = 'bower_components/foundation/js/foundation/';
     this.indexFile = this.appendScripts(this.indexFile, 'scripts/plugins.js', [
-      bs + 'affix.js',
-      bs + 'alert.js',
-      bs + 'dropdown.js',
-      bs + 'tooltip.js',
-      bs + 'modal.js',
-      bs + 'transition.js',
-      bs + 'button.js',
-      bs + 'popover.js',
-      bs + 'carousel.js',
-      bs + 'scrollspy.js',
-      bs + 'collapse.js',
-      bs + 'tab.js'
+      f5 + 'foundation.abide.js',
+      f5 + 'foundation.accordion.js',
+      f5 + 'foundation.alert.js',
+      f5 + 'foundation.clearing.js',
+      f5 + 'foundation.dropdown.js',
+      f5 + 'foundation.equalizer.js',
+      f5 + 'foundation.interchange.js',
+      f5 + 'foundation.joyride.js',
+      f5 + 'foundation.js',
+      f5 + 'foundation.magellan.js',
+      f5 + 'foundation.offcanvas.js',
+      f5 + 'foundation.orbit.js',
+      f5 + 'foundation.reveal.js',
+      f5 + 'foundation.slider.js',
+      f5 + 'foundation.tab.js',
+      f5 + 'foundation.tooltip.js',
+      f5 + 'foundation.topbar.js'
     ]);
   }
 

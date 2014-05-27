@@ -1,4 +1,4 @@
-<% if (includeBootstrap) { %>.browsehappy {
+<% if (includeFoundation) { %>.browsehappy {
     margin: 0.2em 0;
     background: #ccc;
     color: #000;

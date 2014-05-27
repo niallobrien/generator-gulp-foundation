@@ -1,9 +1,9 @@
 {
-  "name": "generator-gulp-bootstrap",
+  "name": "generator-gulp-foundation",
   "version": "0.0.3",
-  "description": "Scaffold out a front-end web app using Sass (node-sass) by default",
+  "description": "Scaffold out a Foundation 5 front-end web app using Sass (node-sass) by default",
   "license": "BSD",
-  "repository": "niallobrien/generator-gulp-bootstrap",
+  "repository": "niallobrien/generator-gulp-foundation",
   "author": "Niall O'Brien",
   "main": "app/index.js",
   "engines": {
@@ -24,7 +24,9 @@
     "h5bp",
     "modernizr",
     "jquery",
-    "gulp"
+    "gulp",
+    "foundation",
+    "browsersync"
   ],
   "dependencies": {
     "chalk": "^0.4.0",
