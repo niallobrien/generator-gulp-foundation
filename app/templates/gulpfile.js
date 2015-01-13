@@ -62,7 +62,8 @@ gulp.task('fonts', function () {
     var streamqueue = require('streamqueue');
     return streamqueue({objectMode: true},
         gulp.src(mainBowerFiles()),
-        gulp.src('app/fonts/**/*')
+        gulp.src('app/fonts/**/*'),
+        gulp.src('app/bower_components/foundation-icon-fonts/fonts/**/*')
     )
         .pipe($.filter('**/*.{eot,svg,ttf,woff}'))
         .pipe($.flatten())

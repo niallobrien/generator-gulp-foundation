@@ -3,6 +3,7 @@
   "private": true,
   "dependencies": {<% if (includeFoundation) { %>
     "foundation": "~5.2",
+    "foundation-icon-fonts": "luwes/foundation-icon-fonts",
     <% } if (includeModernizr) { %>
     "modernizr": "~2.8.2",<% } %>
     "jquery": "~2.1.1"
