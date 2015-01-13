@@ -4,9 +4,9 @@
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "^0.9.1",
+    "main-bower-files": "^2.4.1",
     "gulp": "^3.6.2",
-    "gulp-bower-files": "^0.2.3",
-    "gulp-cache": "^0.1.11",
+    "gulp-cache": "^0.2.4",
     "gulp-clean": "^0.2.4",
     "gulp-csso": "^0.2.8",
     "gulp-filter": "^0.4.1",
