@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "dependencies": {},
   "devDependencies": {
-    "browser-sync": "^0.9.1",
+    "browser-sync": "~2.7.1",
     "main-bower-files": "^2.4.1",
     "gulp": "^3.6.2",
     "gulp-cache": "^0.2.4",
